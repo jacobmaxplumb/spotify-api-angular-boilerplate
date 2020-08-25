@@ -13,9 +13,9 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'cca565915bca4d7ba5e1770f6d9fa0ac'; // Your client id
-var client_secret = 'df9bcaeb144348a081754858bc0cede4'; // Your secret
-var redirect_uri = 'http://localhost:4200'; // Your redirect uri
+var client_id = 'YOUR_CLIENT_ID'; // Your client id
+var client_secret = 'YOUR_CLIENT_SECRET'; // Your secret
+var redirect_uri = 'http://localhost:4200(can_change)'; // Your redirect uri
 
 var generateRandomString = function(length) {
     var text = '';
