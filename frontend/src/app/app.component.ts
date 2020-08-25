@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpotifyService } from './spotify.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { SpotifyService } from './spotify.service';
 export class AppComponent implements OnInit {
   title = 'frontendboiler';
 
-  constructor(private spotifyService: SpotifyService) { }
+  constructor(
+    private spotifyService: SpotifyService,
+    private route: ActivatedRoute
+    ) { }
 
   ngOnInit() {
     const params = new URLSearchParams(window.location.search);
