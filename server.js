@@ -13,24 +13,9 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'be81e40a36dd49998ff17cff0552678e'; // Your client id
-var client_secret = '71b5034c0fc2433f9a842ff3f221cdba'; // Your secret
-var redirect_uri = 'http://localhost:4200'; // Your redirect uri
-
-/**
- * Generates a random string containing numbers and letters
- * @param  {number} length The length of the string
- * @return {string} The generated string
- */
-var generateRandomString = function(length) {
-    var text = '';
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-    for (var i = 0; i < length; i++) {
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-    return text;
-};
+var client_id = 'YOUR CLINET ID'; // Your client id
+var client_secret = 'YOUR SECRET'; // Your secret
+var redirect_uri = 'http://localhost:4200 - CHANGE THIS TO YOUR FRONT END APP (this when local)'; // Your redirect uri
 
 var stateKey = 'spotify_auth_state';
 
